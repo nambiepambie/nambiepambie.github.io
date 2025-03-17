@@ -28,7 +28,7 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "https://nambiepambie.github.io/gallery/"  
-  - ABOUT: "https://nambiepambie.github.ioS/about/"
+  - ABOUT: "https://nambiepambie.github.io/about/"
 
 # All translation keys
 translations:
