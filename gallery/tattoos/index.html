@@ -1,0 +1,232 @@
+---
+layout: page
+title: "album"
+description: "masonry"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+album-title: "Lia Massari Tattoos"
+images:
+- image_path: /gallery/tattoos/img01.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img02.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img03.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img04.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img05.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img06.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img07.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img08.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img09.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img10.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img11.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img12.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img13.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img14.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img15.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img16.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img17.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img18.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img19.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img20.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img21.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img22.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img23.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img24.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img25.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img26.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img27.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img28.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img29.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img30.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img31.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img32.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img33.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img34.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img35.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img36.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img37.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img38.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img39.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img40.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img41.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img42.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img43.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img44.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img45.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img46.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+- image_path: /gallery/tattoos/img47.jpg
+caption: IMAGE TITLE
+copyright: © Lia Massari
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary" id="{{ image.caption }}">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    
+</body></html>
